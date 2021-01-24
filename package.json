@@ -1,7 +1,8 @@
 {
-  "name": "electron-pixi",
+  "name": "oonebppa",
   "version": "0.0.0",
   "license": "MIT",
+  "author": "bouscs",
   "scripts": {
     "dev": "npx electron-webpack dev",
     "compile": "npx electron-webpack",
