@@ -1,0 +1,28 @@
+{
+  "name": "electron-pixi",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npx electron-webpack dev",
+    "compile": "npx electron-webpack",
+    "dist": "npm run compile && electron-builder",
+    "dist:dir": "npm run dist --dir -c.compression=store -c.mac.identity=null"
+  },
+  "electronWebpack": {
+    "renderer": {
+      "webpackConfig": "webpack.renderer.js"
+    }
+  },
+  "dependencies": {
+    "pixi.js": "^5.3.7",
+    "source-map-support": "^0.5.16"
+  },
+  "devDependencies": {
+    "electron": "8.2.0",
+    "electron-builder": "^22.4.1",
+    "electron-webpack": "^2.8.2",
+    "sass": "^1.32.5",
+    "sass-loader": "^10.1.1",
+    "webpack": "~4.42.1"
+  }
+}
